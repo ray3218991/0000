@@ -1,0 +1,261 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 367px;
+    height: 100vh;
+    background-color: aquamarine;
+    float: left;
+    padding-top: 75px;
+}
+main{
+    width: calc(100% - 367px);
+    height: 100vh;
+    background-color: aqua;
+    float: right;
+    position: relative;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.links{
+    width: 150px;
+    margin: auto;
+}
+a{
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.container{
+    width: 955px;
+    height: 570px;
+    background-color: aqua;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container> div{
+    width: 315px;
+    height: 570px;
+    background-color: blue;
+    float: left;
+}
+.Y{
+    margin: 0px 5px;
+}
+.X{
+    background-image: url(./img/新手養狗-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 55%;
+} 
+.X:hover{
+    opacity: 0.8;
+}
+.Y{
+    background-image: url(./img/1200px-Mystica_from_British_Empire_Cattery.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% ;
+}
+.Y:hover{
+    opacity: 0.8;
+}
+.Z{
+    background-image: url(./img/aa1c3f17.jpg);
+    background-size:110%;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+
+}
+.Z:hover{
+    opacity: 0.8;
+}
+
+/* small-pc */
+@media( max-width: 1400px){
+    main{
+        width: calc(100% - 367px);
+        height: 100vh;
+        background-color: aqua;
+        float: right;
+        position: relative;
+    }
+    .container{
+        width: 800px;
+        height: 570px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .container .X{
+        width: 800px;
+        height: 280px;
+        margin-bottom: 10px;
+        background-color: rgb(255, 238, 0);
+    }
+    .container .Y{
+        width: 395px;
+        height: 280px;   
+        background-color: blue;
+        float: left;
+        margin: 0px;
+    }
+    .container .Z{
+        width: 395px;
+        height: 280px;   
+        background-color: blueviolet;
+        float: right;
+    }
+}
+
+/* tablet */
+@media (max-width: 1200px) {
+      nav{
+          width: 100%;
+          height: 100px;
+          padding: 10px 35px;
+          float: unset;
+      }
+      main{
+          width: 100%;
+          height:calc( 100vh - 100px);
+          position: relative;
+          float: unset;
+      }
+      .logo{
+          width: 80px;
+          height: 80px;
+          background-color: black;
+          float: left;
+          margin: 0px;
+      }
+      .links{
+          line-height: 80px;
+          float: right;
+          margin: 0px;
+          width: unset;
+      }
+      a{
+          line-height: 80px;
+          margin-left:40px ;
+          margin-bottom: 0px;
+          text-align: unset;
+          display: unset;
+      }
+      .container{
+          width: calc(100% - 70px) ;
+          height: calc(100% - 50px);
+          background-color: rgb(255, 255, 255);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
+      .container .X{
+          width: 100%;
+          height: calc(50% - 5px );
+          margin-bottom: 10px;
+          background-color: rgb(255, 238, 0);
+      }
+      .container .Y{
+          width: calc(50% - 5px);
+          height: calc(50% - 5px);   
+          background-color: blue;
+         float: left;
+      }
+      .container .Z{
+          width: calc(50% - 5px);
+          height: calc(50% - 5px);  
+          background-color: blueviolet;
+          float: right;
+      }
+    
+}
+
+/* phone */
+@media (max-width: 550px) {
+    nav{
+        width: 100%;
+        height: 80px;
+        position: relative;
+        padding: 15px 20px;
+    }
+    main{
+        width: 100%;
+        min-height: calc(100vh - 80px);
+    }
+    .logo{
+        width: 56px;
+        height: 56px;
+        background-color: black;
+        position: absolute;
+        top: calc(50% - 28px);
+        left: calc(50% - 28px);
+    }
+    .links{
+        width: 40px;
+        height: 50px;
+        background-color: yellow;
+        float: unset;
+        line-height: unset;
+        margin: unset;
+
+    }
+    a{
+        display: none;
+        /* 讓元素在畫面上消失 */
+        font-size: 25px; 
+        letter-spacing: 2px;
+        line-height: unset;
+        margin-left: unset;
+    }
+    .links:hover>a{
+        display: inline;
+    }
+    .links:hover{
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    
+    
+    .container{
+        width: 100%;
+        height:calc( 100vh - 80px);
+        position: unset;
+        transform: unset;
+    }
+    .container .X{
+        width: 100%;
+        height: 195PX;
+        background-color: blue;
+        margin-bottom: unset;
+    }
+    .container .Y{
+        width: 100%;
+        height: 195px;
+        background-color: rgb(255, 102, 0);
+
+    }
+    .container .Z{
+        width: 100%;
+        height: 195px;
+        background-color: rgb(255, 0, 191);
+    }
+    
+}
